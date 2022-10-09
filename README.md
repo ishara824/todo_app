@@ -61,6 +61,22 @@ In order to ensure that the Laravel community is welcoming to all, please review
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
+## Installation
+
+- node version - 16.17.0
+- npm version - 8.15.0
+
+- cd todo-app
+- composer update
+- npm install
+
+- set MAIL_USERNAME,MAIL_PASSWORD and MAIL_FROM_ADDRESS at .env (I was removed my personal mail details)
+
+- create the database
+- php artisan migrate
+- php artisan serve and npm run dev
+- php artisan queue:work (for sending emails in development)
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
